@@ -1,0 +1,30 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    width: 100%;
+}
+
+#previous-trainings {
+    background: black;
+    color: white;
+}
+
+details {
+    cursor: pointer;
+    padding: 3rem;
+    border-bottom: 1px solid white;
+}
+
+/* all <details> get a bottom border, but the top ones also need a top border */
+details:nth-child(-n+2) {
+    border-top: 1px solid white;
+}
+
+/* there should not be a line-break in a heading in summary  */
+summary > h3{
+    display:inline
+}
+
+
+/* turn the standard triangle in front of summary into a "+" */
+/*summary {list-style: none}
+summary::-webkit-details-marker {display: none; } /* todo */

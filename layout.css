@@ -1,0 +1,51 @@
+body {
+    margin: 3rem auto 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* vertical gap between items */
+    gap: 30px;
+}
+
+span {
+    max-width: 20rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    align-items: center;
+
+    /*height: 40rem;
+    justify-content: space-around;*/
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#intro > #intro-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trainer-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
