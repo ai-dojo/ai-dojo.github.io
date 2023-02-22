@@ -1,0 +1,11 @@
+@media screen and (max-width: 666px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* on mobile, two columns turn into one */
+    .two-columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

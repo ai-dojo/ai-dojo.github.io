@@ -1,350 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <style>
-        @media (max-width: 500px) {
-            .reverse-columns {
-                flex-direction: column-reverse;
-                display: flex;
-            }
-        }
-
-        .titled {
-            font-family: 'Merriweather', serif !important;
-            font-size: 58px !important;
-            font-weight: 400 !important;
-            line-height: 64px !important;
-        }
-
-        .subtitled {
-            font-family: 'Merriweather', serif !important;
-            font-size: 22px !important;
-            font-weight: 400 !important;
-            line-height: 36px !important;
-        }
-    </style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="layout_mobile.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AI Dojo</title>
 </head>
-
 <body>
-<!-- NavBar va a todo lo ancho -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <!-- <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>
-    </div> -->
 
-    <div class="navbar-menu">
+<h1> AI Dojo</h1>
 
-        <div class="navbar-end">
-            <a class="navbar-item">
-                WHY?
-            </a>
+<div id="intro">
+    <span><b>dōjō (道場, Japanese) - a place for immersive learning. Literally, a place to learn the path (dō).</b></span>
+    <div id="intro-sub">
+        <span><i>Immersive learning about artificial intelligence and data science </i></span>
+        <span>Hands-on, interactive learning. Trainings, tailor-made to your needs and led by industry practitioners and experienced teachers. </span>
+    </div>
+    <img src="images/ai-dojo.png" width="400px" alt="Computer-generated image of humanoid robot meditating">
+</div>
 
-            <a class="navbar-item">
-                BUY
-            </a>
+<div id="fomo">
 
-            <a class="navbar-item">
-                ILLUSTRATION SERIES
-            </a>
+</div>
 
-            <a class="navbar-item">
-                EXCLUSIVE ILLUSTRATIONS
-            </a>
+<div id="we-got-ya">
 
+</div>
+
+<div id="teaching-philosophy">
+
+</div>
+
+<div id="previous-trainings" class="section">
+    <h1>Tried and tested</h1>
+    <h2>... lorem ipsum</h2>
+    <div class="two-columns">
+        <details>
+            <summary><h3>Deep Learning With Tensorflow</h3></summary>
+            Lorem ipsum
+        </details>
+        <details>
+            <summary><h3>Current Developments in Artificial Intelligence</h3></summary>
+            Lorem ipsum
+        </details>
+        <details>
+            <summary><h3>Deep Learning With PyTorch</h3></summary>
+            Lorem ipsum
+        </details>
+        <details>
+            <summary><h3>Computer Vision</h3></summary>
+            Lorem ipsum
+        </details>
+        <details>
+            <summary><h3>Advanced Machine Learning</h3></summary>
+            Lorem ipsum
+        </details>
+        <details>
+            <summary><h3>Machine Learning On Time Series</h3></summary>
+            Lorem ipsum
+        </details>
+    </div>
+</div>
+
+<div id="trainers" class="section">
+    <h1> Our trainers </h1>
+    <div class="two-columns">
+        <div class="trainer-profile">
+            <img src="images/christian.jpg" alt="Picture of Trainer Christian"/>
+            <span>Christian Staudt</span>
+            <span>LOREM IPSUM</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+            <span>web | github</span>
+        </div>
+        <div class="trainer-profile">
+            <img src="images/katharina.jpg" alt="Picture of Trainer Katharina"/>
+            <span>Katharina Rasch</span>
+            <span>LOREM IPSUM</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+            <span>web | github</span>
         </div>
     </div>
-</nav>
+</div>
 
 
-<section class="hero is-medium">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-centered">
-                <div data-aos="zoom-in-up" class="column is-8">
-                    <h1 class="title titled is-1 mb-6">
-                        The AI-Dojo
-                    </h1>
-                    <h2 class="subtitle subtitled">
-                        A place for immersive learning about artificial intelligence and data science. <br/>
-                        A place to learn about the tools, techniques, and best practices for building AI applications.
-                    </h2>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="hero is-medium">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-centered">
-                <div data-aos="zoom-in-up" class="column is-8">
-                    <h1 class="title titled is-1 mb-6">
-                        Immersive learning, led by industry practitioners
-                    </h1>
-                    <h2 class="subtitle subtitled">
-                        The best way to learn is to simply immerse yourself in the material and just start playing
-                        around with it. After some introductory material on the topic and observing live coding demos,
-                        our participants are quickly enabled to solve interactive coding exercises in small groups,
-                        guided by their teachers.
-                    </h2>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section class="hero is-medium">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-centered">
-                <div data-aos="zoom-in-up" class="column is-8">
-                    <h1 class="title titled is-1 mb-6">
-                        Tailor-made classes
-                    </h1>
-                    <h2 class="subtitle subtitled">
-                        We <b>tailor our classes</b> specifically to your team's needs and AI challenges. We know that
-                        team members often have diverse technical backgrounds and we make sure that we design our
-                        classes such that everybody on the team benefits. </h2>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<!-- Hero del producto -->
-<section class="hero is-white is-fullheight">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns  is-vcentered reverse-columns">
-                <div class="column
-          is-10-mobile
-          is-10-tablet
-          is-5-desktop
-          is-5-widescreen
-          is-5-fullhd " data-aos="fade-down">
-                    <h1 class="title titled is-1 mb-6">
-                        Evolving business with technology
-                    </h1>
-                    <div class="buttons">
-                        <button class="button is-yellow">Esablished technical teams</button>
-                        <button class="button">Less-technical teams</button>
-                    </div>
-                </div>
-                <div data-aos="fade-right" class="column
-          is-10-mobile
-          is-10-tablet
-          is-4-desktop
-          is-7-widescreen
-          is-4-fullhd is-offset-1-fullhd">
-                    <figure class="image is-square">
-                        <img src="../images/undraw_Camera_re_cnp4.svg">
-                    </figure>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-white is-fullheight">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns  is-vcentered">
-                <div data-aos="fade-left" class="column
-          is-10-mobile is-offset-1-mobile
-          is-10-tablet is-offset-1-tablet
-          is-4-desktop is-offset-1-desktop
-          is-4-widescreen is-offset-1-widescreen
-          is-4-fullhd is-offset-1-fullhd">
-                    <figure class="image is-square">
-                        <img src="../images/undraw_Camera_re_cnp4.svg">
-                    </figure>
-                </div>
-                <div data-aos="fade-down" class="column
-          is-10-mobile is-offset-1-mobile
-          is-10-tablet is-offset-1-tablet
-          is-5-desktop is-offset-1-desktop
-          is-5-widescreen is-offset-1-widescreen
-          is-5-fullhd is-offset-1-fullhd">
-                    <h1 class="titled title is-1 mb-6">
-                        absurd illustrations that make sense
-                    </h1>
-                    <h2 class="subtitled subtitle">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae
-                        dolores
-                        nesciunt totam magni quas.
-                    </h2>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-white is-fullheight">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns  is-vcentered reverse-columns">
-                <div data-aos="fade-right" class="column
-          is-10-mobile is-offset-1-mobile
-          is-10-tablet is-offset-1-tablet
-          is-5-desktop is-offset-1-desktop
-          is-5-widescreen is-offset-1-widescreen
-          is-5-fullhd is-offset-1-fullhd">
-                    <h1 class="title titled is-1 mb-6">
-                        absurd illustrations that make sense
-                    </h1>
-                    <h2 class="subtitle subtitled">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae
-                        dolores
-                        nesciunt totam magni quas.
-                    </h2>
-                </div>
-                <div data-aos="fade-down" class="column
-          is-10-mobile is-offset-1-mobile
-          is-10-tablet is-offset-1-tablet
-          is-4-desktop is-offset-1-desktop
-          is-4-widescreen is-offset-1-widescreen
-          is-4-fullhd is-offset-1-fullhd" data-aos="fade-up">
-                    <figure class="image is-square">
-                        <img src="../images/undraw_Camera_re_cnp4.svg">
-                    </figure>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-medium has-text-centered">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-centered">
-                <div data-aos="zoom-in-up" class="column is-8">
-                    <h1 class="title titled is-1 mb-6">
-                        Primary bold title <span id="typewriter"></span>
-                    </h1>
-                    <h2 class="subtitle subtitled">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae
-                        dolores
-                        nesciunt totam magni quas.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    </h2>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<div class="container">
-    <div class="hero-body has-text-centered">
-    <h1 class="title titled is-1 mb-6">
-        Your Trainers <span id="typewriter"></span>
-    </h1>
-    </div>
-    <div class="columns is-vcenter is-centered">
-      <div class="column is-one-third">
-        <div class="card has-text-centered">
-          <div class="card-image">
-            <figure class="image has-text-centered">
-              <img class="is-rounded" src="https://krasch.io/images/portrait-2528.jpg">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="title is-4 has-text-centered">Dr. Katharina Rasch</p>
-            <p class="subtitle is-6 has-text-center">Freelance Data Scientist</p>
-            <div class="content has-text-centered">
-              <div class="field is-grouped is-grouped-multiline has-text-centered">
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-github"></i>
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="card has-text-centered is-centered">
-          <div class="card-image">
-            <figure class="image has-text-centered">
-              <img class="is-rounded" src="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="title is-4 has-text-center">Dr. Christian Staudt</p>
-            <p class="subtitle is-6 has-text-center">Freelance Data Scientist</p>
-            <div class="content has-text-center">
-              <div class="field is-grouped is-grouped-multiline has-text-center">
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-static is-medium">
-                    <span class="icon">
-                      <i class="fa fa-github"></i>
-                    </span>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        once: true
-    });
-</script>
 </body>
-
 </html>
