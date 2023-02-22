@@ -1,16 +1,16 @@
 body {
-    margin: 3rem auto 3rem auto;
+    margin: 0 0 0 0 ;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     /* vertical gap between items */
-    gap: 30px;
+    /*gap: 30px;*/
 }
 
 span {
-    max-width: 20rem;
+    max-width: 30rem;
 }
 
 .section {
@@ -19,6 +19,9 @@ span {
 
     width: 100%;
     align-items: center;
+
+    padding: 3rem 0 3rem 0;
+    gap: 2rem;
 
     /*height: 40rem;
     justify-content: space-around;*/
@@ -33,14 +36,25 @@ span {
 }
 
 #intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: center;
 }
 
-#intro > #intro-sub{
+#intro > #intro-sub {
     display: flex;
     flex-direction: column;
+}
+
+#fomo {
+    height: 20rem;
+}
+
+
+#we-got-ya {
+    height: 20rem;
+}
+
+#teaching-philosophy {
+    height: 20rem;
 }
 
 

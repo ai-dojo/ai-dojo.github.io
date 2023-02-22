@@ -1,12 +1,61 @@
 body {
     font-family: helvetica, arial, sans-serif;
     width: 100%;
+    color: white;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-top: -1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#intro {
+    background: #0F3C4Fff;
+}
+
+#intro > img {
+    border-radius: 50%;
+    max-width: 80%;
+}
+
+#fomo {
+    background: #8B3941ff;
+}
+
+#we-got-ya {
+    background: #60908E;
+}
+
+#teaching-philosophy {
+    background: #2E5E6A;
 }
 
 #previous-trainings {
-    background: black;
-    color: white;
+    background: #1D4D5E;
 }
+
+#trainers {
+    background: #0F3C4Fff;
+}
+
+#trainers img {
+    border-radius: 2%;
+}
+
+#imprint {
+    background: white;
+    color: #0F3C4Fff;
+}
+
+
 
 details {
     cursor: pointer;
