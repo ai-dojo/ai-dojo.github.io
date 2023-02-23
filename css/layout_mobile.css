@@ -1,7 +1,10 @@
 @media screen and (max-width: 666px) {
-    #intro {
+
+    #fomo > #quote-cloud {
         display: flex;
         flex-direction: column;
+        row-gap: 1rem;
+        padding: 0;
     }
 
     /* on mobile, two columns turn into one */

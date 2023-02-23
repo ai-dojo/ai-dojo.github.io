@@ -1,0 +1,9 @@
+/* Additional stylings to make <details> element nicer */
+
+details {
+    cursor: pointer;  /* cursor should be hand, not standard mouse arrow so user knows this is clickable */
+}
+
+/* turn the standard triangle in front of summary into a "+" */
+/*summary {list-style: none}
+summary::-webkit-details-marker {display: none; } /* todo */

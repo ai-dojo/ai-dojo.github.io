@@ -1,0 +1,135 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    width: 100%;
+    color: white;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-top: -1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+/*
+***********************************************
+               INTRO
+***********************************************
+*/
+
+#intro {
+    background: #0F3C4Fff;
+}
+
+#intro > img {
+    border-radius: 50%;
+    max-width: 80%;
+}
+
+/*
+***********************************************
+               FOMO
+***********************************************
+*/
+
+
+#fomo {
+    background: #8B3941ff;
+}
+
+#fomo .quote {
+    border: 1px solid white;
+    border-radius: 0.1rem;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding: 1em;
+    margin: auto;      /*  vertically center the text */
+
+}
+
+/*
+***********************************************
+               WE-GOT-YA
+***********************************************
+*/
+
+#we-got-ya {
+    background: #60908E;
+}
+
+
+/*
+***********************************************
+               TEACHING PHILOSOPHY
+***********************************************
+*/
+
+#teaching-philosophy {
+    background: #2E5E6A;
+}
+
+
+/*
+***********************************************
+               PREVIOUS TRAININGS
+***********************************************
+*/
+
+#previous-trainings {
+    background: #1D4D5E;
+}
+
+/* there should not be a line-break in a heading in summary  */
+summary > h3 {
+    display:inline
+}
+
+details {
+    padding: 3rem;
+    border-bottom: 1px solid white;
+}
+
+/* all <details> already got a bottom border above, but the top ones also need a top border */
+details:nth-child(-n+2) {
+    border-top: 1px solid white;
+}
+
+
+
+/*
+***********************************************
+               TRAINERS
+***********************************************
+*/
+
+
+#trainers {
+    background: #0F3C4Fff;
+}
+
+#trainers img {
+    border-radius: 2%;
+}
+
+/*
+***********************************************
+               IMPRINT
+***********************************************
+*/
+
+#imprint {
+    background: white;
+    color: #0F3C4Fff;
+}
+
+
+

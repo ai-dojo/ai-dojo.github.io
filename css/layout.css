@@ -1,0 +1,130 @@
+body {
+    margin: 0 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* vertical gap between items */
+    /*gap: 30px;*/
+}
+
+span {
+    max-width: 30rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    align-items: center;
+
+    padding: 3rem 0 3rem 0;
+    gap: 2rem;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal-width columns */
+    grid-row-gap: 0;
+    grid-column-gap: 3rem;
+}
+
+/*
+***********************************************
+               INTRO
+***********************************************
+*/
+
+#intro {
+
+}
+
+/*
+***********************************************
+               FOMO
+***********************************************
+*/
+
+
+#fomo {
+
+}
+
+#fomo > #quote-cloud {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    grid-template-areas:
+    ". . . . A A A . . . . ."
+    ". . . . A A A . B B B ."
+    "C C C . A A A . B B B ."
+    "C C C . . . . . B B B ."
+    "C C C . . . . . . . . ."
+    ". . . . . . D D D . . ."
+    ". . E E E . D D D . . ."
+    ". . E E E . D D D . . ."
+    ". . E E E . . . . . . ."
+}
+
+/* assign quotes to grid cells */
+#fomo  #quote-chatgpt {
+    grid-area: A;
+}
+
+#fomo  #quote-demand {
+    grid-area: D;
+}
+
+#fomo  #quote-assistant {
+    grid-area: C;
+}
+
+#fomo #quote-vision {
+    grid-area: B;
+}
+
+#fomo #quote-deepfake {
+    grid-area: E;
+}
+
+
+#fomo .quote {
+    text-indent: -0.4em;  /* "hanging quotation" - the quotation mark should be not be aligned  - this is ugly :-(*/
+    max-width: 20rem;
+}
+
+
+/*
+***********************************************
+               WE-GOT-YA
+***********************************************
+*/
+
+
+#we-got-ya {
+    height: 20rem;
+}
+
+
+/*
+***********************************************
+               TEACHING PHILOSOPHY
+***********************************************
+*/
+
+#teaching-philosophy {
+    height: 20rem;
+}
+
+
+.trainer-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
