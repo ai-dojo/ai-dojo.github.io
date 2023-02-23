@@ -9,6 +9,8 @@
 - Are deepfakes a threat to our enterprise?
 
 
+## Tailor-made
+
 Relax, we got you. In the AI dojo you can learn ... in a calm and immersive atmosphere. We design a training curriculum for you...
 
 
