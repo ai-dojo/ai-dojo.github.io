@@ -16,6 +16,8 @@ Relax, we got you. In the AI dojo you can learn ... in a calm and immersive atmo
 
 ## Tried and Tested 
 
+... or choose from one of the workshops we have built for happy customers:
+
 - **Deep Learning with TensorFlow / PyTorch**: Understand the fundamentals of neural networks and how to build them with the TensorFlow / PyTorch framework.
 - **Advanced Machine Learning**: From feature engineering tricks to explanatory modelling - learn to integrate versatile, state of the art techniques for machine learning.
 - **Current Developments in Artificial Intelligence**: An update on recent advances in this fast-moving field, and their potential for your enterprise.
