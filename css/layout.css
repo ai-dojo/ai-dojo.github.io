@@ -9,7 +9,20 @@ body {
     /*gap: 30px;*/
 }
 
-span {
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-top: -1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+span, p {
     max-width: 30rem;
 }
 
@@ -19,6 +32,7 @@ span {
 
     width: 100%;
     align-items: center;
+    text-align: center;
 
     padding: 3rem 0 3rem 0;
     gap: 2rem;
@@ -114,14 +128,32 @@ span {
 
 /*
 ***********************************************
+               PREVIOUS TRAININGS
+***********************************************
+*/
+
+#previous-trainings {
+    text-align: left;
+}
+
+#previous-trainings  details {
+    width: 30rem;
+}
+
+
+
+/*
+***********************************************
                TEACHING PHILOSOPHY
 ***********************************************
 */
 
-#teaching-philosophy {
-    height: 20rem;
-}
 
+/*
+***********************************************
+               TRAINERS
+***********************************************
+*/
 
 .trainer-profile {
     display: flex;

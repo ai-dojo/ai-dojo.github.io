@@ -4,19 +4,6 @@ body {
     color: white;
 }
 
-h1, h2 {
-    padding: 0;
-    margin: 0;
-}
-
-h2 {
-    margin-top: -1rem;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
 
 /*
 ***********************************************
@@ -74,9 +61,13 @@ h1 {
 */
 
 #teaching-philosophy {
-    background: #2E5E6A;
+    background: #1D4D5E;
 }
 
+
+#teaching-philosophy .method h3 {
+    font-size: 1.5rem;
+}
 
 /*
 ***********************************************
@@ -85,7 +76,7 @@ h1 {
 */
 
 #previous-trainings {
-    background: #1D4D5E;
+    background: #2E5E6A;
 }
 
 /* there should not be a line-break in a heading in summary  */
