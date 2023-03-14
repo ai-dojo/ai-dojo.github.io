@@ -9,7 +9,7 @@ body {
     /*gap: 30px;*/
 }
 
-h1, h2 {
+h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 
 span, p {
-    max-width: 30rem;
+    max-width: 40rem;
 }
 
 .section {
@@ -122,7 +122,7 @@ span, p {
 
 
 #we-got-ya {
-    height: 20rem;
+
 }
 
 
@@ -147,6 +147,7 @@ span, p {
                TEACHING PHILOSOPHY
 ***********************************************
 */
+
 
 
 /*

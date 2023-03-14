@@ -4,6 +4,14 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
 
 /*
 ***********************************************
@@ -39,7 +47,7 @@ body {
     font-weight: 500;
 
     padding: 1em;
-    margin: auto;      /*  vertically center the text */
+    margin: auto; /*  vertically center the text */
 
 }
 
@@ -61,12 +69,13 @@ body {
 */
 
 #teaching-philosophy {
-    background: #1D4D5E;
+    background: #2E5E6A;
 }
 
 
-#teaching-philosophy .method h3 {
-    font-size: 1.5rem;
+#teaching-philosophy .intro-para {
+    font-variant: small-caps;
+    font-weight: bold;
 }
 
 /*
@@ -76,12 +85,12 @@ body {
 */
 
 #previous-trainings {
-    background: #2E5E6A;
+    background: #1D4D5E;
 }
 
 /* there should not be a line-break in a heading in summary  */
 summary > h3 {
-    display:inline
+    display: inline
 }
 
 details {
@@ -93,7 +102,6 @@ details {
 details:nth-child(-n+2) {
     border-top: 1px solid white;
 }
-
 
 
 /*
