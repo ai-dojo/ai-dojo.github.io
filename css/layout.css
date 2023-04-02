@@ -140,7 +140,13 @@ span, p {
     width: 30rem;
 }
 
+#previous-trainings  summary span {
+    float: right
+}
 
+#previous-trainings  summary .align-right {
+    float: right
+}
 
 /*
 ***********************************************
