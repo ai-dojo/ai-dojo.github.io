@@ -119,6 +119,16 @@ details:nth-child(-n+2) {
     border-radius: 2%;
 }
 
+#trainers p {
+    text-align: justify
+}
+
+
+#trainers .icon-group a {
+    text-decoration: none; /* Remove the default underline of the link */
+}
+
+
 /*
 ***********************************************
                IMPRINT
@@ -129,6 +139,5 @@ details:nth-child(-n+2) {
     background: white;
     color: #0F3C4Fff;
 }
-
 
 
