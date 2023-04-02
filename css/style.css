@@ -124,15 +124,9 @@ details:nth-child(-n+2) {
 }
 
 
-#trainers .icon-link {
+#trainers .icon-group a {
     text-decoration: none; /* Remove the default underline of the link */
 }
-
-.icon-link object * {
-    fill: white; /* Change the color to white for all child elements */
-}
-
-
 
 
 /*
