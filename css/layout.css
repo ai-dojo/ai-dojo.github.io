@@ -137,7 +137,7 @@ span, p {
 }
 
 #previous-trainings  details {
-    width: 30rem;
+    max-width: 30rem;
 }
 
 #previous-trainings  summary span {
@@ -167,6 +167,11 @@ span, p {
     flex-direction: column;
     max-width: 400px;
     row-gap: 1rem;
+}
+
+.trainer-profile img {
+    max-width: 400px;
+    width: 100%;
 }
 
 .trainer-profile .icon-group {
