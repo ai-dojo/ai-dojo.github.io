@@ -160,4 +160,19 @@ span, p {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    row-gap: 1rem;
 }
+
+.trainer-profile .icon-group {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    column-gap: 1rem;
+}
+
+.trainer-profile .icon-group img {
+    width: 2rem;
+    height: 2rem;
+}
+
+

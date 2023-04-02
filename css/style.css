@@ -119,6 +119,22 @@ details:nth-child(-n+2) {
     border-radius: 2%;
 }
 
+#trainers p {
+    text-align: justify
+}
+
+
+#trainers .icon-link {
+    text-decoration: none; /* Remove the default underline of the link */
+}
+
+.icon-link object * {
+    fill: white; /* Change the color to white for all child elements */
+}
+
+
+
+
 /*
 ***********************************************
                IMPRINT
@@ -131,20 +147,3 @@ details:nth-child(-n+2) {
 }
 
 
-
-
-.icon-link {
-    display: inline-block;
-    width: 28px; /* Modify the width to change the size of the icon */
-    height: 28px; /* Modify the height to change the size of the icon */
-    text-decoration: none; /* Remove the default underline of the link */
-}
-
-.icon-link object * {
-    fill: white; /* Change the color to white for all child elements */
-}
-
-.icon {
-    width: 100%;
-    height: 100%;
-}
