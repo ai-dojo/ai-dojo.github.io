@@ -17,18 +17,24 @@ a {
     color: white;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h2 {
     font-size: 1.5rem;
 }
 
+
+details {
+    cursor: pointer;  /* cursor should be hand, not standard mouse arrow so user knows this is clickable */
+}
+
+/* highlight text by giving it a white background, text colour needs to be set per section */
 .highlight {
     background: white;
     border-radius: 0.1rem;
     padding: 0 0.2rem 0 0.2rem;
-}
-
-details {
-    cursor: pointer;  /* cursor should be hand, not standard mouse arrow so user knows this is clickable */
 }
 
 
@@ -101,8 +107,13 @@ details {
 
 #teaching-philosophy summary {
     font-variant: small-caps;
-    font-weight: 800;
+    font-weight: 700;
 }
+
+#teaching-philosophy details p {
+    text-align: justify;
+}
+
 
 /*
 ***********************************************
@@ -117,8 +128,13 @@ details {
 
 #previous-trainings summary {
     font-variant: small-caps;
-    font-weight: 800;
+    font-weight: 700;
 }
+
+#previous-trainings details p {
+    text-align: justify;
+}
+
 
 
 /*
@@ -136,7 +152,7 @@ details {
     border-radius: 2%;
 }
 
-#trainers #profiles p {
+#trainers #profile-container p {
     text-align: justify;
     font-size: 1rem;
 }
