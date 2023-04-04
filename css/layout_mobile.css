@@ -7,4 +7,9 @@
         row-gap: 1rem;
         padding: 0;
     }
+
+    #intro img {
+        max-width: 90%;
+    }
+
 }

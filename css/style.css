@@ -10,7 +10,6 @@
 body {
     font-family: helvetica, arial, sans-serif;
     font-size: var(--default-font-size);
-    width: 100%;
     color: white;
 }
 
@@ -59,7 +58,6 @@ em {
 
 #intro > img {
     border-radius: 50%;
-    max-width: 80%;
 }
 
 /*
@@ -79,10 +77,6 @@ em {
 
     font-size: 1.5rem;
     font-weight: 500;
-
-    padding: 1em;
-    margin: auto; /*  vertically center the text */
-
 }
 
 /*

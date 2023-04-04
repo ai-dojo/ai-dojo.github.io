@@ -48,17 +48,12 @@ the > * means that every child element of .section has this max-width
 ***********************************************
 */
 
-/* this section is wider than default, so need to overwrite the max-width */
-#intro > * {
-    max-width: 100%;
+#intro h1 {
+    margin-bottom: -1rem;
 }
 
 #intro img {
-    width: 600px;
-}
-
-#intro h1 {
-    margin-bottom: -1rem;
+    max-width: 600px;
 }
 
 /*
@@ -119,6 +114,9 @@ the > * means that every child element of .section has this max-width
 #fomo .quote {
     text-indent: -0.4em;  /* "hanging quotation" - the quotation mark should be not be aligned  - this is ugly :-(*/
     max-width: 20rem;
+
+    padding: 1em;
+    margin: auto; /*  vertically center the text */
 }
 
 
