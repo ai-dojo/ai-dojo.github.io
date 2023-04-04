@@ -130,33 +130,23 @@ span, p, dt, dd {
 
 /*
 ***********************************************
-               PREVIOUS TRAININGS
-***********************************************
-*/
-
-#previous-trainings {
-    text-align: left;
-}
-
-#previous-trainings  details {
-    max-width: 30rem;
-}
-
-#previous-trainings  summary span {
-    float: right
-}
-
-#previous-trainings  summary .align-right {
-    float: right
-}
-
-/*
-***********************************************
                TEACHING PHILOSOPHY
 ***********************************************
 */
 
 #teaching-philosophy details p {
+    max-width: 30rem;
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+/*
+***********************************************
+               PREVIOUS TRAININGS
+***********************************************
+*/
+
+#previous-trainings details p {
     max-width: 30rem;
     text-align: justify;
     padding-top: 1rem;
