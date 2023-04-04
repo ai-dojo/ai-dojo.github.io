@@ -38,13 +38,6 @@ span, p, dt, dd {
     gap: 2rem;
 }
 
-.two-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* two equal-width columns */
-    grid-row-gap: 0;
-    grid-column-gap: 3rem;
-}
-
 /*
 ***********************************************
                INTRO
@@ -158,9 +151,19 @@ span, p, dt, dd {
 ***********************************************
 */
 
+#trainers #profiles {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+
 .trainer-profile {
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+
     max-width: 400px;
     row-gap: 1rem;
 }
@@ -169,16 +172,10 @@ span, p, dt, dd {
     width: 100%;
 }
 
-.trainer-profile .icon-group {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    column-gap: 1rem;
-}
-
 .trainer-profile .icon-group img {
     width: 2rem;
     height: 2rem;
+    padding: 0 0.5rem 0 0.5rem; /* some space between icons */
 }
 
 
