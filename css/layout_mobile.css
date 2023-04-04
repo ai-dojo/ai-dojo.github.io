@@ -7,10 +7,4 @@
         row-gap: 1rem;
         padding: 0;
     }
-
-    /* on mobile, two columns turn into one */
-    .two-columns {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 1rem;
-    }
 }

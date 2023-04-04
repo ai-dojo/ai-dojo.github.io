@@ -37,6 +37,9 @@ the > * means that every child element of .section has this max-width
  */
 .section > * {
     max-width: 35rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 /*
@@ -159,6 +162,15 @@ the > * means that every child element of .section has this max-width
     display: flex;
     flex-direction: row;
     column-gap: 3rem;
+
+    /* put profiles below each other if there is not enough space */
+    flex-wrap: wrap;
+
+    /* vertical gap when profiles are below each other */
+    row-gap: 3rem;
+
+    /* horizontal center when profiles are below each otehr */
+    justify-content: space-around;
 }
 
 /* the profiles themselves */
