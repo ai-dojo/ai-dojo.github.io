@@ -52,7 +52,10 @@ span, p {
 */
 
 #intro {
+}
 
+#intro img {
+    width: 600px;
 }
 
 /*
