@@ -22,8 +22,8 @@ h1 {
     font-size: 3rem;
 }
 
-span, p {
-    max-width: 40rem;
+span, p, dt, dd {
+    max-width: 35rem;
 }
 
 .section {
@@ -125,7 +125,6 @@ span, p {
 
 
 #we-got-ya {
-
 }
 
 
@@ -157,7 +156,11 @@ span, p {
 ***********************************************
 */
 
-
+#teaching-philosophy details p {
+    max-width: 30rem;
+    text-align: justify;
+    padding-top: 1rem;
+}
 
 /*
 ***********************************************

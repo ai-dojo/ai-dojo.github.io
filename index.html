@@ -34,7 +34,8 @@
     <h1> Relax, we've got you :-) </h1>
     <p>Learn AI and data science in a calm and immersive atmosphere. </p>
 
-    <p>We'll devise a training program,<span class="inverted">&nbsp;just right for you </span>. Or, you can choose from one of the
+    <p>We'll devise a training program, <span class="highlight">just right for you</span>. Or, you can choose from
+        one of the
         <a href="#previous-trainings"><b>existing programs</b></a> we have built for happy customers.
     </p>
 
@@ -44,23 +45,40 @@
 <div id="teaching-philosophy" class="section">
     <h1> Our teaching method</h1>
     <p><i> Here's how we make sure that the AI Dojo is a calm and immersive place for learning:</i></p>
-    <p><span class="intro-para">Tailored to your needs</span> We'll discuss with you beforehand exactly what you
-        and your team want to get out of the training. We know that teams members often have diverse technical
-        backgrounds, and we'll make sure that everybody finds their place in the Dojo.
-    </p>
-    <p><span class="intro-para">Keep presentations to a minimum.</span>
-        We'll make sure that you know the essentials to get started,
-        but really, the best way to learn is to just dive in and try things out.</p>
-    <p><span class="intro-para">Code examples</span> are a great way for immersing oneself in the material. We'll
-        walk you through examples that showcase important concepts — and we'll run and modify them live, too.
-    </p>
-    <p><span class="intro-para">Hands-on Exercises</span> We'll form smaller groups that work on smaller exercises
-        together. The trainers check in with each group regularly to make sure that no one is stuck.
-    </p>
-    <p><span class="intro-para">Q&A</span> Questions and discussions are encouraged at any point during the training.
-        Your trainers have spent many years building AI solutions for clients and are happy to share their knowledge
-        (and perhaps some anecdotes here and there).
-    </p>
+
+    <details id="first-teaching-item">
+        <summary><span class="highlight">Tailored to your needs</span></summary>
+
+        <p>We'll discuss with you beforehand exactly what you and your team want to get out of the training.
+            We know that teams members often have diverse technical
+            backgrounds, and we'll make sure that everybody finds their place in the Dojo.</p>
+    </details>
+
+    <details>
+        <summary><span class="highlight">Keeping presentations to a minimum</span></summary>
+        <p>We'll make sure that you know the essentials to get started,
+            but really, the best way to learn is to just dive in and try things out.</p>
+    </details>
+
+    <details>
+        <summary><span class="highlight">Code examples and live coding</span></summary>
+        <p>Code examples are a great way for immersing oneself in the material.
+            We'll walk you through examples that showcase important concepts — and we'll run and modify them live,
+            too.</p>
+    </details>
+    <details>
+        <summary><span class="highlight">Hands-on exercises</span></summary>
+        <p> We'll form smaller groups that work on smaller
+            exercises together. The trainers check in with each group regularly to make sure that no one is stuck.
+        </p>
+    </details>
+
+    <details>
+        <summary><span class="highlight">Conversations with experts</span></summary>
+        <p> Questions and discussions are encouraged at any point during the
+        training. Your trainers have spent many years building AI solutions for clients and are happy to share their knowledge
+        (and perhaps some anecdotes here and there).</p>
+    </details>
 </div>
 
 <div id="previous-trainings" class="section">
@@ -139,6 +157,13 @@
 <div id="imprint">
     <a href="imprint.html">Imprint</a> | ai-dojo@clstaudt.me
 </div>
+
+
+<script>
+
+// first <details> item in teaching philosophy should already be open when page is loaded
+document.getElementById("first-teaching-item").open = true;
+</script>
 
 </body>
 </html>

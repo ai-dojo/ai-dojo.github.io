@@ -21,6 +21,12 @@ h2 {
     font-size: 1.5rem;
 }
 
+.highlight {
+    background: white;
+    border-radius: 0.1rem;
+    padding: 0 0.2rem 0 0.2rem;
+}
+
 
 /*
 ***********************************************
@@ -70,10 +76,8 @@ h2 {
     background: var(--green);
 }
 
-#we-got-ya .inverted {
-    background: white;
+#we-got-ya .highlight {
     color: var(--green);
-    border-radius: 0.1rem;
 }
 
 
@@ -87,10 +91,13 @@ h2 {
     background: var(--teal);
 }
 
-
-#teaching-philosophy .intro-para {
+#teaching-philosophy summary {
     font-variant: small-caps;
-    font-weight: bold;
+    font-weight: 800;
+}
+
+#teaching-philosophy .highlight {
+    color: var(--teal);
 }
 
 /*
@@ -104,17 +111,17 @@ h2 {
 }
 
 /* there should not be a line-break in a heading in summary  */
-summary > h3 {
+#previous-trainings summary > h3 {
     display: inline
 }
 
-details {
+#previous-trainings details {
     padding: 3rem;
     border-bottom: 1px solid white;
 }
 
 /* all <details> already got a bottom border above, but the top ones also need a top border */
-details:nth-child(-n+2) {
+#previous-trainings details:nth-child(-n+2) {
     border-top: 1px solid white;
 }
 
