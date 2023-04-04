@@ -1,3 +1,11 @@
+:root {
+    --dark-blue: #0F3C4Fff;
+    --red: #8B3941ff;
+    --green: #60908Eff;
+    --teal: #2E5E6A;
+    --blue: #1D4D5E;
+}
+
 body {
     font-family: helvetica, arial, sans-serif;
     font-size: 1.25rem;
@@ -21,7 +29,7 @@ h2 {
 */
 
 #intro {
-    background: #0F3C4Fff;
+    background: var(--dark-blue);
 }
 
 #intro > img {
@@ -37,7 +45,7 @@ h2 {
 
 
 #fomo {
-    background: #8B3941ff;
+    background: var(--red);
 }
 
 #fomo .quote {
@@ -59,12 +67,13 @@ h2 {
 */
 
 #we-got-ya {
-    background: #60908E;
+    background: var(--green);
 }
 
 #we-got-ya .inverted {
     background: white;
-    color: #60908E;
+    color: var(--green);
+    border-radius: 0.1rem;
 }
 
 
@@ -75,7 +84,7 @@ h2 {
 */
 
 #teaching-philosophy {
-    background: #2E5E6A;
+    background: var(--teal);
 }
 
 
@@ -91,7 +100,7 @@ h2 {
 */
 
 #previous-trainings {
-    background: #1D4D5E;
+    background: var(--blue)
 }
 
 /* there should not be a line-break in a heading in summary  */
@@ -118,7 +127,7 @@ details:nth-child(-n+2) {
 
 
 #trainers {
-    background: #0F3C4Fff;
+    background: var(--dark-blue);
 }
 
 #trainers img {
@@ -144,11 +153,11 @@ details:nth-child(-n+2) {
 
 #imprint {
     background: white;
-    color: #0F3C4Fff;
+    color: var(--dark-blue);
 }
 
 #imprint a {
-    color: #0F3C4Fff;
+    color: var(--dark-blue);
 }
 
 
