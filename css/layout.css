@@ -48,8 +48,17 @@ the > * means that every child element of .section has this max-width
 ***********************************************
 */
 
+/* this section is wider than default, so need to overwrite the max-width */
+#intro > * {
+    max-width: 100%;
+}
+
 #intro img {
     width: 600px;
+}
+
+#intro h1 {
+    margin-bottom: -1rem;
 }
 
 /*
