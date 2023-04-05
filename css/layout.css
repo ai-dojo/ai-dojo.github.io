@@ -4,28 +4,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* vertical gap between items */
-    /*gap: 30px;*/
 }
 
+/*
+using the gap attribute to make horizontal and vertical space
+so removing all padding and margins from elements that tend to have a lot of those
+this feels kind of bad practice? but it works...
+ */
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
 
-h2 {
-    margin-top: -1rem;
-}
 
-h1 {
-    font-size: 3rem;
-}
-
-span, p {
-    max-width: 40rem;
-}
-
+/* all sections are full-width, with a colourful background and a good amount of top and bottom padding */
 .section {
     display: flex;
     flex-direction: column;
@@ -38,11 +30,16 @@ span, p {
     gap: 2rem;
 }
 
-.two-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* two equal-width columns */
-    grid-row-gap: 0;
-    grid-column-gap: 3rem;
+/*
+most sections are not full-width, but we can't set a width for the .section directly,
+because then the background would only apply to part of the section, not to the full width of the screen.
+the > * means that every child element of .section has this max-width
+ */
+.section > * {
+    max-width: 40rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 /*
@@ -51,8 +48,12 @@ span, p {
 ***********************************************
 */
 
-#intro {
+#intro h1 {
+    margin-bottom: -1rem;
+}
 
+#intro img {
+    max-width: 600px;
 }
 
 /*
@@ -62,10 +63,12 @@ span, p {
 */
 
 
-#fomo {
-
+/* this section is wider than default, so need to overwrite the max-width */
+#fomo > * {
+    max-width: 100%;
 }
 
+/* lol */
 #fomo > #quote-cloud {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -111,6 +114,9 @@ span, p {
 #fomo .quote {
     text-indent: -0.4em;  /* "hanging quotation" - the quotation mark should be not be aligned  - this is ugly :-(*/
     max-width: 20rem;
+
+    padding: 1em;
+    margin: auto; /*  vertically center the text */
 }
 
 
@@ -122,31 +128,8 @@ span, p {
 
 
 #we-got-ya {
-
 }
 
-
-/*
-***********************************************
-               PREVIOUS TRAININGS
-***********************************************
-*/
-
-#previous-trainings {
-    text-align: left;
-}
-
-#previous-trainings  details {
-    max-width: 30rem;
-}
-
-#previous-trainings  summary span {
-    float: right
-}
-
-#previous-trainings  summary .align-right {
-    float: right
-}
 
 /*
 ***********************************************
@@ -154,7 +137,21 @@ span, p {
 ***********************************************
 */
 
+#teaching-philosophy details p {
+    text-align: justify;
+    padding-top: 1rem;
+}
 
+/*
+***********************************************
+               PREVIOUS TRAININGS
+***********************************************
+*/
+
+#previous-trainings details p {
+    text-align: justify;
+    padding-top: 1rem;
+}
 
 /*
 ***********************************************
@@ -162,26 +159,49 @@ span, p {
 ***********************************************
 */
 
-.trainer-profile {
+/* this section is wider than default, so need to overwrite the max-width */
+#trainers > * {
+    max-width: 100%;
+}
+
+/* will try to put profiles next to each other, if there is space */
+#trainers > #profile-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+
+    /* put profiles below each other if there is not enough space */
+    flex-wrap: wrap;
+
+    /* vertical gap when profiles are below each other */
+    row-gap: 3rem;
+
+    /* horizontal center when profiles are below each otehr */
+    justify-content: space-around;
+}
+
+/* the profiles themselves */
+#trainers > #profile-container > div {
+    max-width: 400px;
+    align-items: center;
+
+    /* meh, this is only needed so I can set the row-gap*/
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     row-gap: 1rem;
 }
 
-.trainer-profile img {
-    max-width: 400px;
+#trainers img {
     width: 100%;
 }
 
-.trainer-profile .icon-group {
+#trainers .icon-group {
     display: flex;
     flex-direction: row;
-    align-self: center;
     column-gap: 1rem;
 }
 
-.trainer-profile .icon-group img {
+#trainers .icon-group img {
     width: 2rem;
     height: 2rem;
 }

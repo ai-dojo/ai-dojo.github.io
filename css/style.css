@@ -1,6 +1,15 @@
+:root {
+    --dark-blue: #0F3C4Fff;
+    --red: #8B3941ff;
+    --green: #60908Eff;
+    --teal: #2E5E6A;
+    --blue: #1D4D5E;
+    --default-font-size: 1.25rem;
+}
+
 body {
     font-family: helvetica, arial, sans-serif;
-    width: 100%;
+    font-size: var(--default-font-size);
     color: white;
 }
 
@@ -8,8 +17,32 @@ a {
     color: white;
 }
 
+h1 {
+    font-family: sans-serif;
+    font-size: 5rem;
+}
+
 h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: var(--default-font-size);
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+details {
+    cursor: pointer;  /* cursor should be hand, not standard mouse arrow so user knows this is clickable */
+}
+
+/* highlight text by giving it a white background, text colour needs to be set per section */
+em {
+    font-style: normal;
+    background: white;
+    border-radius: 0.1rem;
+    padding: 0 0.2rem 0 0.2rem;
 }
 
 
@@ -20,12 +53,11 @@ h2 {
 */
 
 #intro {
-    background: #0F3C4Fff;
+    background: var(--dark-blue);
 }
 
 #intro > img {
     border-radius: 50%;
-    max-width: 80%;
 }
 
 /*
@@ -36,7 +68,7 @@ h2 {
 
 
 #fomo {
-    background: #8B3941ff;
+    background: var(--red);
 }
 
 #fomo .quote {
@@ -45,10 +77,6 @@ h2 {
 
     font-size: 1.5rem;
     font-weight: 500;
-
-    padding: 1em;
-    margin: auto; /*  vertically center the text */
-
 }
 
 /*
@@ -58,7 +86,11 @@ h2 {
 */
 
 #we-got-ya {
-    background: #60908E;
+    background: var(--green);
+}
+
+#we-got-ya .highlight {
+    color: var(--green);
 }
 
 
@@ -69,14 +101,22 @@ h2 {
 */
 
 #teaching-philosophy {
-    background: #2E5E6A;
+    background: var(--teal);
 }
 
+#teaching-philosophy em {
+    color: var(--teal);
+}
 
-#teaching-philosophy .intro-para {
+#teaching-philosophy summary {
     font-variant: small-caps;
-    font-weight: bold;
+    font-weight: 700;
 }
+
+#teaching-philosophy details p {
+    text-align: justify;
+}
+
 
 /*
 ***********************************************
@@ -85,23 +125,19 @@ h2 {
 */
 
 #previous-trainings {
-    background: #1D4D5E;
+    background: var(--blue);
 }
 
-/* there should not be a line-break in a heading in summary  */
-summary > h3 {
-    display: inline
+
+#previous-trainings summary {
+    font-variant: small-caps;
+    font-weight: 700;
 }
 
-details {
-    padding: 3rem;
-    border-bottom: 1px solid white;
+#previous-trainings details p {
+    text-align: justify;
 }
 
-/* all <details> already got a bottom border above, but the top ones also need a top border */
-details:nth-child(-n+2) {
-    border-top: 1px solid white;
-}
 
 
 /*
@@ -112,15 +148,16 @@ details:nth-child(-n+2) {
 
 
 #trainers {
-    background: #0F3C4Fff;
+    background: var(--dark-blue);
 }
 
 #trainers img {
     border-radius: 2%;
 }
 
-#trainers p {
-    text-align: justify
+#trainers #profile-container p {
+    text-align: justify;
+    font-size: 1rem;
 }
 
 
@@ -137,11 +174,11 @@ details:nth-child(-n+2) {
 
 #imprint {
     background: white;
-    color: #0F3C4Fff;
+    color: var(--dark-blue);
 }
 
 #imprint a {
-    color: #0F3C4Fff;
+    color: var(--dark-blue);
 }
 
 
