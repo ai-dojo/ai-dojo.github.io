@@ -168,7 +168,7 @@ the > * means that every child element of .section has this max-width
 #trainers > #profile-container {
     display: flex;
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 4rem;
 
     /* put profiles below each other if there is not enough space */
     flex-wrap: wrap;
