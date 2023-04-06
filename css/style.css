@@ -89,8 +89,9 @@ em {
     background: var(--green);
 }
 
-#we-got-ya .highlight {
-    color: var(--green);
+
+#we-got-ya a{
+    font-weight: 600;
 }
 
 
