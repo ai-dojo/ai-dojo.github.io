@@ -54,7 +54,7 @@ the > * means that every child element of .section has this max-width
 
 #intro img {
     max-width: 600px;
-    object-fit: contain;
+    max-height: 60vh;
 }
 
 /*
