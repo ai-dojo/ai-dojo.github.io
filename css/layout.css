@@ -55,6 +55,7 @@ the > * means that every child element of .section has this max-width
 #intro img {
     max-width: 600px;
     justify-self: flex-start;
+    align-self: flex-start;
 }
 
 /*
