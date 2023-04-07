@@ -4,6 +4,7 @@
     --green: #60908Eff;
     --teal: #2E5E6A;
     --blue: #1D4D5E;
+    --desaturated-dark-blue:  #153949;
     --default-font-size: 1.25rem;
 }
 
@@ -89,8 +90,9 @@ em {
     background: var(--green);
 }
 
-#we-got-ya .highlight {
-    color: var(--green);
+
+#we-got-ya a{
+    font-weight: 600;
 }
 
 
@@ -163,6 +165,16 @@ em {
 
 #trainers .icon-group a {
     text-decoration: none; /* Remove the default underline of the link */
+}
+
+/*
+***********************************************
+              CONTACT
+***********************************************
+*/
+
+#contact {
+    background: var(--desaturated-dark-blue);
 }
 
 

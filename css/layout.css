@@ -128,6 +128,7 @@ the > * means that every child element of .section has this max-width
 
 
 #we-got-ya {
+
 }
 
 
@@ -216,7 +217,7 @@ the > * means that every child element of .section has this max-width
 #imprint {
     display: flex;
     flex-direction: row;
-    
+
     align-self: center;
 
     padding: 1rem 0 1rem 0;
